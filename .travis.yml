@@ -1,0 +1,5 @@
+language:
+  - swift
+osx_image: xcode11.2
+script:
+  - xcodebuild -scheme TestingTravisCI -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=13.1' build test
